@@ -62,10 +62,10 @@ function DetailCategory(props) {
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Name</th>
-                                                <th>Price</th>
-                                                <th>Image</th>
-                                                <th>Edit</th>
+                                                <th>Tên</th>
+                                                <th>Giá</th>
+                                                <th>Ảnh</th>
+                                                <th>Sửa</th>
                                             </tr>
                                         </thead>
 
@@ -79,7 +79,7 @@ function DetailCategory(props) {
                                                         <td><img src={value.image} alt="" style={{ width: '70px' }} /></td>
                                                         <td>
                                                             <div className="d-flex">
-                                                                <Link to={"/product/update/" + value._id} className="btn btn-success mr-1">Update</Link>
+                                                                <Link to={"/product/update/" + value._id} className="btn btn-success mr-1">Sửa</Link>
                                                             </div>
                                                         </td>
                                                     </tr>

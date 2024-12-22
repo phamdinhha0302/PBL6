@@ -80,8 +80,8 @@ function SignIn(props) {
                 <div className="container">
                     <div className="breadcrumb-content">
                         <ul>
-                            <li><Link to="/">Home</Link></li>
-                            <li className="active">Login</li>
+                            <li><Link to="/">Trang chủ</Link></li>
+                            <li className="active">Đăng nhập</li>
                         </ul>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ function SignIn(props) {
                         <div className="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb-30 mr_signin">
                             <form action="#" >
                                 <div className="login-form">
-                                    <h4 className="login-title">Login</h4>
+                                    <h4 className="login-title">Đăng nhập</h4>
                                     <div className="row">
                                         <div className="col-md-12 col-12 mb-20">
                                             <label>Username *</label>
@@ -102,25 +102,25 @@ function SignIn(props) {
                                             }
                                         </div>
                                         <div className="col-12 mb-20">
-                                            <label>Password</label>
-                                            <input className="mb-0" type="password" placeholder="Password" value={password} onChange={(e) => set_password(e.target.value)} />
+                                            <label>Mật khẩu</label>
+                                            <input className="mb-0" type="password" placeholder="Mật khẩu" value={password} onChange={(e) => set_password(e.target.value)} />
                                             {
                                                 error_password && <span style={{ color: 'red' }}>* Wrong Password!</span>
                                             }
                                         </div>
                                         <div className="col-md-8">
                                             <div className="check-box d-inline-block ml-0 ml-md-2 mt-10">
-                                                <Link to="/signup">Do You Have Account?</Link>
+                                                <Link to="/signup">Bạn đã có tài khoản chưa?</Link>
                                             </div>
                                         </div>
-                                        <div className="col-md-4 mt-10 mb-20 text-left text-md-right">
+                                        {/* <div className="col-md-4 mt-10 mb-20 text-left text-md-right">
                                             <a href="#"> Forgotten pasward?</a>
-                                        </div>
+                                        </div> */}
                                         <div className="col-md-12">
                                             {
                                                 redirect && <Redirect to="/" />
                                             }
-                                            <button className="register-button mt-0" style={{ cursor: 'pointer'}} onClick={handler_signin}>Login</button>
+                                            <button className="register-button mt-0" style={{ cursor: 'pointer'}} onClick={handler_signin}>Đăng nhập</button>
                                         </div>
                                     </div>
                                 </div>

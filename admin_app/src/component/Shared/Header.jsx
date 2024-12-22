@@ -51,14 +51,14 @@ function Header(props) {
                                     <li className="nav-item dropdown">
                                         <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                            <span className="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
+                                            <span className="ml-2 d-none d-lg-inline-block"><span>Xin chào,</span> <span
                                                 className="text-dark">{user ? user.fullname : ""}</span> <i data-feather="chevron-down"
                                                     className="svg-icon"></i></span>
                                         </a>
                                         <div className="dropdown-menu dropdown-menu-right user-dd animated flipInY">
                                             <button className="dropdown-item" onClick={() => { logOut() }}><i data-feather="power"
                                                 className="svg-icon mr-2 ml-1"></i>
-                                                Logout
+                                                Đăng xuất
                                             </button>
                                         </div>
                                     </li>

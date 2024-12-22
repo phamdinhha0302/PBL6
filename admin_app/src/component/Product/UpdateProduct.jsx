@@ -120,7 +120,7 @@ function UpdateProduct(props) {
                     <div className="col-12">
                         <div className="card">
                             <div className="card-body">
-                                <h4 className="card-title">Update Product</h4>
+                                <h4 className="card-title">Sửa sản phẩm</h4>
                                 {
                                     validationMsg.api === "Bạn đã thêm thành công" ?
                                         (
@@ -197,7 +197,7 @@ function UpdateProduct(props) {
                                     </div>
 
 
-                                    <button type="submit" className="btn btn-primary">Update Product</button>
+                                    <button type="submit" className="btn btn-primary">Cập nhật</button>
                                 </form>
                             </div>
                         </div>

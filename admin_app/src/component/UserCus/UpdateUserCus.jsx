@@ -80,7 +80,7 @@ function UpdateUserCus(props) {
                     <div className="col-12">
                         <div className="card">
                             <div className="card-body">
-                                <h4 className="card-title">Update User</h4>
+                                <h4 className="card-title">Sửa người dùng</h4>
                                 {
                                     validationMsg.api === "Bạn đã update thành công" ?
                                         (
@@ -110,18 +110,18 @@ function UpdateUserCus(props) {
                                     </div>
 
                                     <div className="form-group w-50">
-                                        <label htmlFor="name">Name:</label>
+                                        <label htmlFor="name">Tên:</label>
                                         <input type="text" className="form-control" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
                                         <p className="form-text text-danger">{validationMsg.name}</p>
                                     </div>
 
                                     <div className="form-group w-50">
-                                        <label htmlFor="password">Password:</label>
+                                        <label htmlFor="password">Mật khẩu:</label>
                                         <input type="password" className="form-control" id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                                         <p className="form-text text-danger">{validationMsg.password}</p>
                                     </div>
 
-                                    <button type="submit" className="btn btn-primary">Update</button>
+                                    <button type="submit" className="btn btn-primary">Cập nhật</button>
                                 </form>
                             </div>
                         </div>

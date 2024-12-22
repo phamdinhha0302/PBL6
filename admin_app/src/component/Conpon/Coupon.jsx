@@ -63,21 +63,21 @@ function Coupon(props) {
                     <div className="col-12">
                         <div className="card">
                             <div className="card-body">
-                                <h4 className="card-title">Coupons</h4>
+                                <h4 className="card-title">Mã giảm giá</h4>
                                 <Search handlerSearch={handlerSearch} />
 
-                                <Link to="/coupon/create" className="btn btn-primary my-3">New create</Link>
+                                <Link to="/coupon/create" className="btn btn-primary my-3">Tạo</Link>
 
                                 <div className="table-responsive">
                                     <table className="table table-striped table-bordered no-wrap">
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Code</th>
-                                                <th>Count</th>
-                                                <th>Promotion</th>
-                                                <th>Describe</th>
-                                                <th>Edit</th>
+                                                <th>Mã</th>
+                                                <th>Số lượng</th>
+                                                <th>Khuyến mãi</th>
+                                                <th>Mô tả</th>
+                                                <th>Sửa</th>
                                             </tr>
                                         </thead>
 
@@ -110,10 +110,6 @@ function Coupon(props) {
                     </div>
                 </div>
             </div>
-            <footer className="footer text-center text-muted">
-                All Rights Reserved by Adminmart. Designed and Developed by <a
-                    href="https://www.facebook.com/KimTien.9920/">Tiền Kim</a>.
-            </footer>
         </div>
     );
 }

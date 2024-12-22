@@ -53,10 +53,10 @@ function Sale(props) {
                     <div className="col-12">
                         <div className="card">
                             <div className="card-body">
-                                <h4 className="card-title">Sale</h4>
+                                <h4 className="card-title">Giảm giá</h4>
                                 <Search handlerSearch={handlerSearch} />
 
-                                <Link to="/sale/create" className="btn btn-primary my-3">New create</Link>
+                                <Link to="/sale/create" className="btn btn-primary my-3">Tạo</Link>
 
 
                                 <div className="table-responsive">
@@ -64,12 +64,12 @@ function Sale(props) {
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Promotion</th>
-                                                <th>Describe</th>
-                                                <th>Start</th>
-                                                <th>End</th>
-                                                <th>Status</th>
-                                                <th>Edit</th>
+                                                <th>Khuyến mãi</th>
+                                                <th>Mô tả</th>
+                                                <th>Bắt đầu</th>
+                                                <th>Kết thúc</th>
+                                                <th>Trạng thái</th>
+                                                <th>Sửa</th>
                                             </tr>
                                         </thead>
 
@@ -85,7 +85,7 @@ function Sale(props) {
                                                         <td className="name">{value.status ? "Active" : "Disable"}</td>
                                                         <td>
                                                             <div className="d-flex">
-                                                                <Link to={"/sale/" + value._id} className="btn btn-success mr-1">Update</Link>
+                                                                <Link to={"/sale/" + value._id} className="btn btn-success mr-1">Sửa</Link>
                                                             </div>
                                                         </td>
                                                     </tr>

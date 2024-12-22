@@ -68,20 +68,20 @@ function UserCus(props) {
                     <div className="col-12">
                         <div className="card">
                             <div className="card-body">
-                                <h4 className="card-title">Users</h4>
+                                <h4 className="card-title">Người dùng</h4>
                                 <Search handlerSearch={handlerSearch} />
 
-                                <Link to="/customer/create" className="btn btn-primary my-3">New create</Link>
+                                <Link to="/customer/create" className="btn btn-primary my-3">Tạo</Link>
 
                                 <div className="table-responsive">
                                     <table className="table table-striped table-bordered no-wrap">
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Name</th>
+                                                <th>Tên</th>
                                                 <th>Email</th>
-                                                <th>Permission</th>
-                                                <th>Action</th>
+                                                <th>Quyền</th>
+                                                <th>Hành động</th>
                                             </tr>
                                         </thead>
 
@@ -95,9 +95,9 @@ function UserCus(props) {
                                                         <td>{value.id_permission.permission}</td>
                                                         <td>
                                                             <div className="d-flex">
-                                                                <Link to={"user/update/" + value._id} className="btn btn-success mr-1">Update</Link>
+                                                                <Link to={"user/update/" + value._id} className="btn btn-success mr-1">Sửa</Link>
 
-                                                                <button type="button" style={{ cursor: 'pointer', color: 'white' }} onClick={() => handleDelete(value)} className="btn btn-danger" >Delete</button>
+                                                                <button type="button" style={{ cursor: 'pointer', color: 'white' }} onClick={() => handleDelete(value)} className="btn btn-danger" >Xoá</button>
                                                             </div>
                                                         </td>
                                                     </tr>

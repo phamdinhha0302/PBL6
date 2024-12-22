@@ -67,14 +67,14 @@ function Login(props) {
     return (
         <div className="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative" style={{ background: 'url(../assets/images/big/auth-bg.jpg) no-repeat center center' }}>
             <div className="auth-box row">
-                <div className="col-lg-7 col-md-5 modal-bg-img" style={{ backgroundImage: 'url(../assets/images/big/3.jpg)' }}>
+                <div className="col-lg-7 col-md-5 modal-bg-img" style={{ backgroundImage: 'url(https://curnonwatch.com/blog/wp-content/uploads/2021/03/danh-gia-dong-ho-day-da-bia.jpg)' }}>
                 </div>
                 <div className="col-lg-5 col-md-7 bg-white">
                     <div className="p-3">
                         <div className="text-center">
                             <img src="../assets/images/big/icon.png" alt="wrapkit" />
                         </div>
-                        <h2 className="mt-3 text-center">Sign In</h2>
+                        <h2 className="mt-3 text-center">Đăng nhập</h2>
 
                         {
                             <p className="form-text text-danger">{validationMsg.api}</p>
@@ -84,19 +84,19 @@ function Login(props) {
                                 <div className="col-lg-12">
                                     <div className="form-group">
                                         <label className="text-dark" htmlFor="uname">Email</label>
-                                        <input className="form-control" name="email" type="text" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                        <input className="form-control" name="email" type="text" placeholder="Vui lòng nhập email" value={email} onChange={(e) => setEmail(e.target.value)} />
                                         <p className="form-text text-danger">{validationMsg.email}</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="form-group">
-                                        <label className="text-dark" htmlFor="pwd">Password</label>
-                                        <input className="form-control" name="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter your password" />
+                                        <label className="text-dark" htmlFor="pwd">Mật khẩu</label>
+                                        <input className="form-control" name="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Vui lòng nhập mật khẩu" />
                                         <p className="form-text text-danger">{validationMsg.password}</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-12 text-center">
-                                    <button type="submit" className="btn btn-block btn-dark">Sign In</button>
+                                    <button type="submit" className="btn btn-block btn-dark">Đăng nhập</button>
                                 </div>
                             </div>
                         </form>

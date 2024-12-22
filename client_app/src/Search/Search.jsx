@@ -57,7 +57,7 @@ function Search(props) {
                         <div className="shop-top-bar">
                             <div className="product-select-box">
                                 <div className="product-short">
-                                    <p>Sort By:</p>
+                                    <p>Sắp xếp:</p>
                                     <select className="nice-select">
                                         <option value="trending">Relevance</option>
                                         <option value="rating">Price (Low &gt; High)</option>
@@ -85,7 +85,7 @@ function Search(props) {
                                                             <Link to={`/detail/${value._id}`}>
                                                                 <img src={value.image} alt="Li's Product Image" />
                                                             </Link>
-                                                            <span className="sticker">New</span>
+                                                            <span className="sticker">Mới</span>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-5 col-md-7">
@@ -113,15 +113,15 @@ function Search(props) {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="col-lg-4">
+                                                    {/* <div className="col-lg-4">
                                                         <div className="shop-add-action mb-xs-30">
                                                             <ul className="add-actions-link">
-                                                                <li className="add-cart"><a href="#">Add to cart</a></li>
+                                                                <li className="add-cart"><a href="#">Thêm giỏ hàng</a></li>
                                                                 <li className="wishlist"><a href="wishlist.html"><i className="fa fa-heart-o" />Add to wishlist</a></li>
                                                                 <li><a className="quick-view" data-toggle="modal" data-target={`#${value._id}`} href="#"><i className="fa fa-eye" />Quick view</a></li>
                                                             </ul>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             ))
                                         }

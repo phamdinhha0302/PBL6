@@ -182,20 +182,20 @@ function CompletedOrder(props) {
                     <div className="col-12">
                         <div className="card">
                             <div className="card-body">
-                                <h4 className="card-title">Complete Order</h4>
+                                <h4 className="card-title">Hoàn thành đơn hàng</h4>
                                 <div className="table-responsive mt-3" id="customers">
                                     <table className="table table-striped table-bordered no-wrap" id="tab_customers">
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Name</th>
+                                                <th>Tên</th>
                                                 <th>Email</th>
-                                                <th>Phone</th>
-                                                <th>Address</th>
-                                                <th>Status</th>
-                                                <th>Total</th>
-                                                <th>Payment</th>
-                                                <th>Action</th>
+                                                <th>Số điện thoại</th>
+                                                <th>Địa chỉ</th>
+                                                <th>Trạng thái</th>
+                                                <th>Tổng</th>
+                                                <th>Thanh toán</th>
+                                                <th>Hành động</th>
                                             </tr>
                                         </thead>
 
@@ -223,7 +223,7 @@ function CompletedOrder(props) {
                                                         <td className="name">{value.pay === true ? "Đã thanh toán" : "Chưa thanh toán"}</td>
                                                         <td>
                                                             <div className="d-flex">
-                                                                <Link to={"/order/detail/" + value._id} className="btn btn-info mr-1">Detail</Link>
+                                                                <Link to={"/order/detail/" + value._id} className="btn btn-info mr-1">Chi tiết</Link>
 
                                                             </div>
                                                         </td>
@@ -232,7 +232,7 @@ function CompletedOrder(props) {
                                             }
                                         </tbody>
                                     </table>
-                                    <h4 className="card-title">Total Money: {new Intl.NumberFormat('vi-VN',{style: 'decimal',decimal: 'VND'}).format(totalMoney)+ ' VNĐ'}</h4>
+                                    <h4 className="card-title">Tổng tiền: {new Intl.NumberFormat('vi-VN',{style: 'decimal',decimal: 'VND'}).format(totalMoney)+ ' VNĐ'}</h4>
                                 </div>
                                 <Pagination filter={filter} onPageChange={onPageChange} totalPage={totalPage} />
                                     <div>
