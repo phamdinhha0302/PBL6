@@ -86,7 +86,7 @@ function Home_Category(props) {
           </div>
         </div>
         <Slider {...settings}>
-          {product_category &&
+          {product_category && product_category.length > 0 &&
             product_category.map((value) => (
               <div
                 className="col-lg-12 animate__animated animate__zoomIn col_product"
@@ -95,9 +95,9 @@ function Home_Category(props) {
               >
                 <div className="single-product-wrap">
                   <div className="product-image">
-                    <Link to={`/detail/${value.id_product._id}`}>
+                    <Link to={`/detail/${value?.id_product?._id}`}>
                       <img
-                        src={value.id_product.image}
+                        src={value?.id_product?.image}
                         alt="Li's Product Image"
                       />
                     </Link>
@@ -108,7 +108,7 @@ function Home_Category(props) {
                       <div className="product-review">
                         <h5 className="manufacturer">
                           <a href="shop-left-sidebar.html">
-                            {value.id_product.name_product}
+                            {value?.id_product?.name_product}
                           </a>
                         </h5>
                         <div className="rating-box">
@@ -136,16 +136,16 @@ function Home_Category(props) {
                           {new Intl.NumberFormat("vi-VN", {
                             style: "decimal",
                             decimal: "VND",
-                          }).format(value.id_product.price_product) + " VNĐ"}
+                          }).format(value?.id_product?.price_product || 0) + " VNĐ"}
                         </del>
                         <span className="new-price" style={{ color: "red" }}>
                           {new Intl.NumberFormat("vi-VN", {
                             style: "decimal",
                             decimal: "VND",
                           }).format(
-                            parseInt(value.id_product.price_product) -
-                              (parseInt(value.id_product.price_product) *
-                                parseInt(value.promotion)) /
+                            parseInt(value?.id_product?.price_product) -
+                              (parseInt(value?.id_product?.price_product) *
+                                parseInt(value?.promotion)) /
                                 100
                           ) + " VNĐ"}
                         </span>
@@ -159,13 +159,13 @@ function Home_Category(props) {
                             title="quick view"
                             className="links-details"
                             data-toggle="modal"
-                            data-target={`#${value.id_product._id}`}
+                            data-target={`#${value?.id_product?._id}`}
                             onClick={() =>
                               GET_id_modal(
-                                `${value.id_product._id}`,
-                                parseInt(value.id_product.price_product) -
-                                  (parseInt(value.id_product.price_product) *
-                                    parseInt(value.promotion)) /
+                                `${value?.id_product?._id}`,
+                                parseInt(value?.id_product?.price_product) -
+                                  (parseInt(value?.id_product?.price_product) *
+                                    parseInt(value?.promotion)) /
                                     100
                               )
                             }
