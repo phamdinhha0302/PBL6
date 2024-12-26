@@ -272,11 +272,7 @@ function Detail_Product(props) {
                   <div className="product-desc">
                     <p>
                       <span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Vel harum tenetur delectus nam quam assumenda? Soluta
-                        vitae tempora ratione excepturi doloremque, repudiandae
-                        ullam, eum corporis, itaque dolor aperiam enim
-                        aspernatur.
+                        {product.describe}
                       </span>
                     </p>
                   </div>
@@ -337,7 +333,7 @@ function Detail_Product(props) {
                 <ul className="nav li-product-menu">
                   <li>
                     <a className="active" data-toggle="tab" href="#description">
-                      <span>Mô tả</span>
+                      {/* <span>Mô tả</span> */}
                     </a>
                   </li>
                   {/* <li>
@@ -357,10 +353,7 @@ function Detail_Product(props) {
             >
               <div className="product-description">
                 <span>
-                  The best is yet to come! Give your walls a voice with a framed
-                  poster. This aesthethic, optimistic poster will look great in
-                  your desk or in an open-space office. Painted wooden frame
-                  with passe-partout for more depth.
+                  {/* {product.description} */}
                 </span>
               </div>
             </div>
