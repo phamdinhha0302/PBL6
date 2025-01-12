@@ -6,6 +6,7 @@ import { Link, useParams } from "react-router-dom";
 import Products from "./Component/Products";
 import Pagination from "./Component/Pagination";
 import Search from "./Component/Search";
+import RecommendModal from "./Component/RecommendModal";
 
 Shop.propTypes = {};
 
@@ -230,14 +231,7 @@ function Shop(props) {
             <div className="col-lg-9 order-1 order-lg-2">
               <div className="shop-top-bar">
                 <div className="product-select-box">
-                  <div className="product-short">
-                    <p>Sort By:</p>
-                    <select className="nice-select">
-                      <option value="trending">Relevance</option>
-                      <option value="rating">Price (Low &gt; High)</option>
-                      <option value="rating">Price (High &gt; Low)</option>
-                    </select>
-                  </div>
+                  <RecommendModal handler_Search={handler_Search} />
                 </div>
               </div>
               <div className="shop-products-wrapper">
